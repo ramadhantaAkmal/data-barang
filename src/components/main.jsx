@@ -9,9 +9,10 @@ const Main = () => {
   return (
     <div className="">
       <>
+      
         <MainNavbar></MainNavbar>
         <Routes>
-          <Route path="/" element={<Dashboard></Dashboard>}></Route>
+          <Route exact path="/" element={<Dashboard></Dashboard>}></Route>
           <Route path="/adddata" element={<AddData></AddData>} />
           <Route path="/editdata/:dataId" element={<EditData></EditData>} />
         </Routes>
